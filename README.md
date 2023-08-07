@@ -21,4 +21,4 @@
 ## Ultrasonic Sensor
 Ultrasonic sensor is an electrical device that measures the distance to an object by sending an ultrasonic sound waves. It calculates the distance by using this formula D = ½ T x C, the T here refers to time that the ultrasonic sound takes untill it reaches an object,and the C is the speed of sound.
 
-<kbd> **Figure 1** <br><br>Ultrasonic sensor<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/b378af0f-30e8-406d-99c8-483acdc0b914) []()</kbd></kbd>
+<kbd> **Figure 1** <br><br>Ultrasonic sensor<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/b378af0f-30e8-406d-99c8-483acdc0b914) [osoyoo.com](https://osoyoo.com/2018/09/18/micro-bit-lesson-using-the-ultrasonic-module/)</kbd></kbd>
