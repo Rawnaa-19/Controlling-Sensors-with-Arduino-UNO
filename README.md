@@ -2,7 +2,7 @@
 ## Table of Contents : 
 1. [Introduction](#Introduction)
 1. [Ultrasonic sensor](#Ultrasonic-sensor)
-    - [Circuit Components](#Circuit-Components)
+    - [Circuit Components](#Ultrasonic-Circuit-Components)
     - [Circuit Wiring](#Ultrasonic-Circuit-Wiring)
     - [Arduino Code](#Ultrasonic-Arduino-Code)
     - [Code simulation](#Ultrasonic-Code-simulation)
@@ -24,9 +24,9 @@ The third task for the Electronics and Power Department is controlling some sens
 Ultrasonic sensor is an electrical device that measures the distance to an object by sending an ultrasonic sound waves. It calculates the distance by using this formula D = ½ T x C, the T here refers to time that the ultrasonic sound takes untill it reaches an object,and the C is the speed of sound.(Robocraze, 2022)
 The ultrasonic sensor has 4 pins (Vcc , ground, trigger,and echo pin).The trigger pin is the input pin that triggers "initiates" the sensor by sending the sound waves to detect an object.And the echo pin is the output pin that recieves the sound wave and send a signal back if an object is detected  (Robocraze, 2022)
 
-<kbd> **Figure 1** <br><br>Ultrasonic sensor<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/b378af0f-30e8-406d-99c8-483acdc0b914) [osoyoo.com][ref]</kbd></kbd>
+<kbd> **Figure 1** <br><br>*Ultrasonic sensor*<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/b378af0f-30e8-406d-99c8-483acdc0b914) [osoyoo.com][ref]</kbd></kbd>
 
-### Circuit Components
+### Ultrasonic Circuit Components
 1. HC-SR04 Ultrasonic sensor
 2. Arduino UNO
 3. Breadboard
@@ -35,4 +35,47 @@ The ultrasonic sensor has 4 pins (Vcc , ground, trigger,and echo pin).The trigge
 ### Ultrasonic Circuit Wiring
 The 4 pins of the Ultrasonic are all connected to the Arduino throught the breadboard. The Vcc pin is connected to the 5v pin of the Arduino, the ground pin is connected to the GND pin of the Arduino, the trigger pin is connected to pin 12 of the Arduino, and the echo pin is connected to pin 11 of the arduino.<br><br>
 
-<kbd> **Figure 2** <br><br>_Ultrasonic Sensor Circuit _<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Motors-with-Arduino-UNO/assets/106926557/2b280aa9-9d0c-43d3-b071-99b350fa8fc6)</kbd></kbd>
+<kbd> **Figure 2** <br><br>*Ultrasonic Sensor Circuit*<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/f67f0a58-ffe2-426d-a7f8-1f1cd8913207)</kbd></kbd>
+
+### Ultrasonic Arduino Code
+In the following code the readUltrasonicDistance() method is used to send a signal from the trigger pin and send back the time it took to detect an object (send the signal back) over the echo pin.(Instructables, 2023)<br><br>
+```
+// C++ code
+//
+int dist = 0;
+int triggerPin=12;//Orange Wire
+int echoPin = 11;// Yellow Wire
+long readUltrasonicDistance(int triggerPin, int echoPin)
+{
+  pinMode(triggerPin, OUTPUT);  // Clear the trigger
+  digitalWrite(triggerPin, LOW);
+  delayMicroseconds(2);
+  // Sets the trigger pin to HIGH state for 10 microseconds
+  digitalWrite(triggerPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(triggerPin, LOW);
+  pinMode(echoPin, INPUT);
+  // Reads the echo pin, and returns the sound wave travel time in microseconds
+  return pulseIn(echoPin, HIGH);
+}
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(5, OUTPUT);
+}
+void loop()
+{
+  Serial.println(0.01723 * readUltrasonicDistance(echoPin, echoPin));
+  dist = 0.01723 * readUltrasonicDistance(triggerPin, echoPin);
+
+  delay(10); // Delay a little bit to improve simulation performance
+}
+```
+### Ultrasonic Code simulation
+
+
+
+https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/5a9a103f-f5fb-4fc3-a5ed-0da530c85fcf
+
+
