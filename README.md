@@ -31,4 +31,8 @@ The ultrasonic sensor has 4 pins (Vcc , ground, trigger,and echo pin).The trigge
 2. Arduino UNO
 3. Breadboard
 4. Wires
+   
 ### Ultrasonic Circuit Wiring
+The 4 pins of the Ultrasonic are all connected to the Arduino throught the breadboard. The Vcc pin is connected to the 5v pin of the Arduino, the ground pin is connected to the GND pin of the Arduino, the trigger pin is connected to pin 12 of the Arduino, and the echo pin is connected to pin 11 of the arduino.<br><br>
+
+<kbd> **Figure 2** <br><br>_Ultrasonic Sensor Circuit _<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Motors-with-Arduino-UNO/assets/106926557/2b280aa9-9d0c-43d3-b071-99b350fa8fc6)</kbd></kbd>
