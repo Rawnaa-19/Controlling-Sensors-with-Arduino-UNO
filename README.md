@@ -17,6 +17,8 @@
    - [Arduino Code](#knob-Arduino-Code)
    - [Code simulation](#knob-code-simulation)
 1. [References](#References)
+## Introduction
+The third task for the Electronics and Power Department is controlling some sensors with an Arduino UNO.Detecting an object in the back of a vehicle, monitoring a patient's heart rate, and using smoke detectors are just some of the many applications for sensors.Sensors can be classified into two types: analog and digital. Analog sensors measure a continuous range and the output is a continuous signal represented by a sine wave, while digital sensors measure discrete values and the output is a discrete signal represented by a square wave. 
 
 ## Ultrasonic Sensor
 Ultrasonic sensor is an electrical device that measures the distance to an object by sending an ultrasonic sound waves. It calculates the distance by using this formula D = ½ T x C, the T here refers to time that the ultrasonic sound takes untill it reaches an object,and the C is the speed of sound.(Robocraze, 2022)
