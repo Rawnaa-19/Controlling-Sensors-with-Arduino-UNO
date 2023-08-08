@@ -11,7 +11,7 @@
      - [Circuit Wiring](#PIR-Circuit-Wiring)
      - [Arduino Code](#PIR-Arduino-Code)
      - [Code simulation](#PIR-code-simulation)
-1. [Analog Sensor]()
+1. [Analog Sensor](#Analog-Sensor)
    - [Circuit Components](#knob-Circuit-Components)
    - [Circuit Wiring](#knob-Circuit-Wiring)
    - [Arduino Code](#knob-Arduino-Code)
@@ -76,7 +76,7 @@ void loop()
 https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/5a9a103f-f5fb-4fc3-a5ed-0da530c85fcf
 
 ## Digital Sensor
-Passive infrared sensor "PIR" is an another example of a digital sensor. A PIR sensor detects motion by measuring infrared light from the surrounding object.(Santos & Santos, 2019)
+Passive infrared sensor "PIR" is an another example of a digital sensor,since it reads discrete values "HIGH or LOW". A PIR sensor detects motion by measuring infrared light from the surrounding object.(Santos & Santos, 2019)
 
 ### PIR Circuit Components
 1. PIR sensor
@@ -110,7 +110,6 @@ void loop(){
 }
 ```
 ### PIR code simulation
-
 
 https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/0b5643e2-e346-42b2-a2d1-f08bbf275a62
 
