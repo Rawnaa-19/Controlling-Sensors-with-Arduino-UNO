@@ -6,11 +6,11 @@
     - [Circuit Wiring](#Ultrasonic-Circuit-Wiring)
     - [Arduino Code](#Ultrasonic-Arduino-Code)
     - [Code simulation](#Ultrasonic-Code-simulation)
-1. [Digital Sensor](#DC-Motor)
-     - [Circuit Components](#DC-Motor-Circuit-Components)
-     - [Circuit Wiring](#DC-Motor-Circuit-Wiring)
-     - [Arduino Code](#DC-Motor-Arduino-Code)
-     - [Code simulation](#knob-Motor-code-simulation)
+1. [Digital Sensor](#Digital-Sensor)
+     - [Circuit Components](#PIR-Circuit-Components)
+     - [Circuit Wiring](#PIR-Circuit-Wiring)
+     - [Arduino Code](#PIR-Arduino-Code)
+     - [Code simulation](#PIR-code-simulation)
 1. [Analog Sensor]()
    - [Circuit Components](#knob-Circuit-Components)
    - [Circuit Wiring](#knob-Circuit-Wiring)
@@ -73,8 +73,44 @@ void loop()
 ```
 ### Ultrasonic Code simulation
 
-
-
 https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/5a9a103f-f5fb-4fc3-a5ed-0da530c85fcf
 
+## Digital Sensor
+Passive infrared sensor "PIR" is an another example of a digital sensor. A PIR sensor detects motion by measuring infrared light from the surrounding object.(Santos & Santos, 2019)
+
+### PIR Circuit Components
+1. PIR sensor
+2. Arduino UNO
+3. Wires
+4. Breadboard
+
+### PIR Circuit Wiring
+The PIR sensor has 3 pins (Vcc, ground , and signal). The Vcc pin is connected to the 5V pin of the Arduino through the breadboard,The ground pin is connected to the GND pin of the Arduino through the breadboard,and the signal pin is connected to pin 2 of the Arduino.<br><br>
+
+<kbd> **Figure 3** <br><br>*PIR Sensor Circuit*<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/1dfc5e5f-c98f-45bb-82f9-e95b3440fc05)</kbd></kbd>
+### PIR Arduino Code
+The following code reads the sensor value, and if HIGH, it prints "motion detected" on the serial monitor, and if LOW, "motion stopped" is printed on the serial monitor.(Santos & Santos, 2019)<br><br>
+```
+int sensor = 2;              // the pin that the sensor is atteched to
+int val = 0;                 // variable to store the sensor status (value)
+
+void setup() {
+  pinMode(sensor, INPUT);    // initialize sensor as an input
+  Serial.begin(9600);        // initialize serial
+}
+
+void loop(){
+  val = digitalRead(sensor);   // read sensor value
+  if (val == HIGH) {           // check if the sensor is HIGH
+      Serial.println("Motion detected!");   
+  } 
+  else {
+        Serial.println("Motion stopped!"); 
+  }
+}
+```
+### PIR code simulation
+
+
+https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/0b5643e2-e346-42b2-a2d1-f08bbf275a62
 
