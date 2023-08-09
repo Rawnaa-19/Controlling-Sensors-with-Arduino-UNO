@@ -151,7 +151,7 @@ Passive infrared sensor "PIR" is an another example of a digital sensor,since it
 ### PIR Circuit Wiring
 The PIR sensor has 3 pins (Vcc, ground , and signal). The Vcc pin is connected to the 5V pin of the Arduino through the breadboard,The ground pin is connected to the GND pin of the Arduino through the breadboard,and the signal pin is connected to pin 2 of the Arduino.<br><br>
 
-<kbd> **Figure 3** <br><br>*PIR Sensor Circuit*<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/1dfc5e5f-c98f-45bb-82f9-e95b3440fc05)</kbd></kbd>
+<kbd> **Figure 4** <br><br>*PIR Sensor Circuit*<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/1dfc5e5f-c98f-45bb-82f9-e95b3440fc05)</kbd></kbd>
 ### PIR Arduino Code
 The following code reads the sensor value, and if HIGH, it prints "motion detected" on the serial monitor, and if LOW, "motion stopped" is printed on the serial monitor.[^6]<br><br>
 ```
@@ -188,7 +188,7 @@ I have added the LDR light dependent resistor sensor to this task as an example 
 ### LDR Circuit Wiring
 The LDR sensor has two pins.And to apply voltage divider, the 10k ohm resistor need to be connected in series with the sensor.<br><br>[^1]
 
-<kbd> **Figure 4** <br><br>*LDR Sensor Circuit*<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/59c43984-42b9-4864-bfcf-15094c4f4b40)</kbd></kbd>
+<kbd> **Figure 5** <br><br>*LDR Sensor Circuit*<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/59c43984-42b9-4864-bfcf-15094c4f4b40)</kbd></kbd>
 
 ### LDR-Arduino-Code
 From the Arduino IDE **File>examples>Analog>AnalogInOutSerial** section, a ready to use code is provided.[^1]
