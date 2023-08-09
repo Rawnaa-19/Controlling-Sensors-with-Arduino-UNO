@@ -12,10 +12,10 @@
      - [Arduino Code](#PIR-Arduino-Code)
      - [Code simulation](#PIR-code-simulation)
 1. [Analog Sensor](#Analog-Sensor)
-   - [Circuit Components](#knob-Circuit-Components)
-   - [Circuit Wiring](#knob-Circuit-Wiring)
-   - [Arduino Code](#knob-Arduino-Code)
-   - [Code simulation](#knob-code-simulation)
+   - [Circuit Components](#LDR-Circuit-Components)
+   - [Circuit Wiring](#LDR-Circuit-Wiring)
+   - [Arduino Code](#LDR-Arduino-Code)
+   - [Code simulation](#LDR-code-simulation)
 1. [References](#References)
 ## Introduction
 The third task for the Electronics and Power Department is controlling some sensors with an Arduino UNO. A sensor is an input device that produces an output in response to its surrounding environment.Detecting an object in the back of a vehicle, monitoring a patient's heart rate, and using smoke detectors are just some of the many applications for sensors,which can be classified into two types: analog and digital.**(Teja, 2023)** Analog sensors measure a continuous range and the output is a continuous signal represented by a sine wave, while digital sensors measure discrete values and the output is a discrete signal represented by a square wave. (Teja, 2023)
@@ -112,4 +112,46 @@ void loop(){
 ### PIR code simulation
 
 https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/0b5643e2-e346-42b2-a2d1-f08bbf275a62
+## Analog Sensor
+I have added the LDR light dependent resistor sensor to this task as an example of an analog sensor.LDR sensors are light sensitive devices that measure light intensity.
+### LDR Circuit Components
+1. LDR Sensor
+2. 10k ohm resistor
+3. Arduino UNO
+4. Breadboar
+5. Wires
+
+### LDR Circuit Wiring
+The LDR sensor has two pins.And to apply voltage divider, the 10k ohm resistor need to be connected in series with the sensor.<br><br>
+
+<kbd> **Figure 4** <br><br>*LDR Sensor Circuit*<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/59c43984-42b9-4864-bfcf-15094c4f4b40)</kbd></kbd>
+
+### LDR-Arduino-Code
+From the Arduino IDE **File>examples>Analog>AnalogInOutSerial** section, a ready to use code is provided.(Instructables, 2017)
+```
+const int analogInPin = A0;  // Analog input pin that the LDR is attached to
+
+int sensorValue = 0;  // value read from the pot
+
+void setup() {
+  // initialize serial communications at 9600 bps:
+  Serial.begin(9600);
+}
+
+void loop() {
+  // read the analog in value:
+  sensorValue = analogRead(analogInPin);
+
+  // print the results to the Serial Monitor:
+  Serial.print("sensor = ");
+  Serial.println(sensorValue);
+
+  delay(2);
+}
+```
+### LDR code simulation
+
+
+https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/4113e20c-82e3-498f-b3a1-f9779baa9297
+
 
