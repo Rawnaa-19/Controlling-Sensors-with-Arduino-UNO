@@ -38,7 +38,7 @@ The ultrasonic sensor has 4 pins (Vcc , ground, trigger,and echo pin).The trigge
 4. Wires
    
 ### Ultrasonic Circuit Wiring
-The 4 pins of the Ultrasonic are all connected to the Arduino throught the breadboard. The Vcc pin is connected to the 5v pin of the Arduino, the ground pin is connected to the GND pin of the Arduino, the trigger pin is connected to pin 12 of the Arduino, and the echo pin is connected to pin 11 of the arduino.<br><br>
+The 4 pins of the Ultrasonic are all connected to the Arduino through the breadboard. The Vcc pin is connected to the 5v pin of the Arduino, the ground pin is connected to the GND pin of the Arduino, the trigger pin is connected to pin 12 of the Arduino, and the echo pin is connected to pin 11 of the arduino.<br><br>
 
 <kbd> **Figure 2** <br><br>*Ultrasonic Sensor Circuit*<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/f67f0a58-ffe2-426d-a7f8-1f1cd8913207)</kbd></kbd>
 
@@ -186,7 +186,7 @@ I have added the LDR light dependent resistor sensor to this task as an example 
 5. Wires
 
 ### LDR Circuit Wiring
-The LDR sensor has two pins.And to apply voltage divider, the 10k ohm resistor need to be connected in series with the sensor.<br><br>[^1]
+The LDR sensor has two pins.And to apply voltage divider, the 10k ohm resistor need to be connected in series with the sensor.[^1]<br><br>
 
 <kbd> **Figure 5** <br><br>*LDR Sensor Circuit*<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/59c43984-42b9-4864-bfcf-15094c4f4b40)</kbd></kbd>
 
