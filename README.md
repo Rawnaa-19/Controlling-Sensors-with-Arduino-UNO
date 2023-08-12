@@ -40,7 +40,7 @@ The ultrasonic sensor has 4 pins (Vcc , ground, trigger,and echo pin).The trigge
 ### Ultrasonic Circuit Wiring
 The 4 pins of the Ultrasonic are all connected to the Arduino through the breadboard. The Vcc pin is connected to the 5v pin of the Arduino, the ground pin is connected to the GND pin of the Arduino, the trigger pin is connected to pin 12 of the Arduino, and the echo pin is connected to pin 11 of the arduino.<br><br>
 
-<kbd> **Figure 2** <br><br>*Ultrasonic Sensor Circuit*<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/f67f0a58-ffe2-426d-a7f8-1f1cd8913207)</kbd></kbd>
+<kbd> **Figure 2** <br><br>*Ultrasonic Sensor Circuit*<br><br> <kbd>![image](https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/f67f0a58-ffe2-426d-a7f8-1f1cd8913207) </kbd></kbd>
 
 ### Ultrasonic Arduino Code
 In the following code the readUltrasonicDistance() method is used to send a signal from the trigger pin and send back the time it took to detect an object (send the signal back) over the echo pin.[^2]<br><br>
@@ -218,7 +218,7 @@ void loop() {
 
 https://github.com/Rawnaa-19/Controlling-Sensors-with-Arduino-UNO/assets/106926557/4113e20c-82e3-498f-b3a1-f9779baa9297
 
-### References
+## References
 [^1]: Instructables. (2017). How to use a Light Dependent Resistor (LDR). Instructables. https://www.instructables.com/How-to-Use-a-Light-Dependent-Resistor-LDR/ 
 [^2]: Instructables. (2023). Ultrasonic distance sensor in Arduino with Tinkercad. Instructables. https://www.instructables.com/Ultrasonic-Distance-Sensor-Arduino-Tinkercad/
 [^3]: Keim, R. (n.d.). Photoresistor. Resistor Types | Resistor Guide. https://eepower.com/resistor-guide/resistor-types/photo-resistor/# 
